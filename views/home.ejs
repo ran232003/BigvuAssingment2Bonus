@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+<h1><%=  title  %></h1>
+<div class="myCenterDiv">
+<form action="/<%=  backgroundColor %>" method="post">
+  <select class="form-select form-select-sm select" aria-label=".form-select-sm example" name="check">
+    <option  value="null">Choose Picture</option>
+    <% for (let i=0; i<images.length; i++) { %>
+      
+        <!-- <p><%=  images[i].name  %></p> -->
+        <option class="option" value="<%=  images[i].value  %>" ><%=  images[i].name  %></option>
+    
+
+<%}%>
+</select>
+<div class="row center">
+  <div class="col-md-12">
+    <button type="submit" name="white" class="btn btn-dark white">White</button>
+    <button type="submit" name="blue" class="btn btn-primary black">Blue</button>
+  </div>
+</div>
+
+  </form>
+  <div class="d-flex justify-content-center align-items-center container ">
+  <div class="col-md-3 inputCenter" id="inputCenter">
+    <input class="form-control" id="inputCenter2" type="text" placeholder="Display Text">
+  </div>
+ 
+ </div>
+
+
+<canvas id="myCanvas" width="640" height="360"  style="margin: 20px; border:20px  solid white; border-color: <%=  backgroundColor %>;">
+  Your browser does not support the HTML5 canvas tag.
+  </canvas>
+  
+
+</div>
+ 
+ <script src="../public/index.js"></script>
+
+
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+<h1>Assignment 2</h1>
+
+<div class="dropdown centerMenu">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu textMenu" aria-labelledby="dropdownMenuButton">
+    <% for (let i=0; i<images.length; i++) { %>
+      
+        <div class="item">
+          <!-- <p><%=  images[i].name  %></p> -->
+          <a href=""><%=  images[i].name  %></a>
+      
+  </div>
+  <%}%>
+</div>
+<div class="row center">
+  <div class="col-md-12">
+    <button class="btn btn-primary">white</button>
+    <button class="btn btn-secondary black">black</button>
+
+  </div>
+</div>
+<canvas class="myCanvas" width="240" height="297" style="border:1px solid #d3d3d3;">
+  Your browser does not support the HTML5 canvas tag.
+  </canvas>
+<div>
+ <select name="" id="" class = "form-select form-select-sm" aria-label=".form-select-sm example" >
+   <option value=""> <div class="item">
+    <a href=""><%=  images[0].name  %></a>
+
+</div></option>
+   <option value=""> <div class="item">
+    <a href=""><%=  images[1].name  %></a>
+
+</div></option>
+   <option value=""> <div class="item">
+    <a href=""><%=  images[2].name  %></a>
+
+</div></option>
+ </select>
+</div>
+<form action="/" method="post">
+<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="check">
+  <option selected>Open this select menu</option>
+  <option value="1" ><%=  images[1].name  %></option>
+  <option value="2" >Two</option>
+  <option value="3" >Three</option>
+
+<button type="submit" class="button" name="buttonlist">select</button>
+</form>
+
+<%- include('partials/footer') %>

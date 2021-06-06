@@ -1,0 +1,56 @@
+
+body {
+  background-color: #E8ECEF;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.centered {
+    padding-top: 100px;
+    text-align: center;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+
+}
+.myCenterDiv{
+  text-align: center;
+
+}
+.center{
+  padding-top: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.black{
+  color: #000;
+}
+.myCanvas{
+  padding: 30px;
+}
+.centerMenu{
+  text-align: center;
+  padding: 10px;
+}
+.myrow{
+  text-align: center;
+}
+.textMenu{
+  text-align: center;
+}
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+#inputCenter{
+  text-align: center;
+  justify-content: center;
+
+}
+footer{
+  text-align: center;
+}
